@@ -31,6 +31,8 @@ jobs:
             - v1-dependencies-
 
       - run: mvn dependency:go-offline
+      - run: ls -l
+      - run: ls -l ..
       - run: mvn package
 
       - save_cache:
