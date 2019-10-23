@@ -25,8 +25,6 @@ jobs:
           path: ~/repo
 
       # Download and cache dependencies
-      - run: pwd
-      - run: cd java-web-project && ls -l
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "pom.xml" }}
